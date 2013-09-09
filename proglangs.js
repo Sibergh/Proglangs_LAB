@@ -1,6 +1,6 @@
-
 //Denne koden ser ut til å fungere på samme måte
-//som den koden du viste i timen (06.09.13)//
+//som den koden du viste i timen (06.09.13).
+//Usikker på hva forskjellen er. //
 
 
 //Når listen forandres, skjer følgende funksjon//
