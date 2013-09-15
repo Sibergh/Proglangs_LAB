@@ -1,61 +1,48 @@
-#liblue {
-		 color:blue;
-		 text-align:center;
+body{	/*Endrer alt innenfor body til følgende:*/
+	text-align:center;	/*All tekst blir sentrert*/
+	padding-left: 11em;	/*Alt blir flyttet 11em (11 ganger font størrelse) fra venstre*/
+	width: 20em;	/*Alt blir 20em bredt*/
+	font-family: Georgia, "Times New Roman", Times, serif;	/*All tekst i body blir Georgia, de neste er prioriteringer hvis Georgia ikke eksisterer i brukerens browser*/
+	color: #FF7400;	/*Farge på elementer i body*/
+	background-color: #3914AF	/*Bakgrunnsfarge*/
+
 }
 
-#lired {
-		 color:red;
-		 text-align:center;
+ul.navbar {	/*Class element for den uorganiserte listen*/
+		list-style-type: none;	/*Fjerner den lille runningen i ul, og tallene i ol*/
+		padding: 0;	/*Padding blir fjernet*/
+		margin: 0;	/*Margin blir fjernet*/
+		position: absolute;	/*Listen er absolutt. Dette betyr at listen er plassert på et fast punkt i browseren*/
+		top: 2em;	/*Listen er 2em fra toppen*/
+		left: 1em;	/*Listen er 1em fra venstre*/
+		width: 9em;	/*Listen er 9em bred*/
 }
 
-#liorange {
-		 color:orange;
-		 text-align:center;
+h1 {	/*Endrer alle Heading 1*/
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif	/*Type skrift*/
 }
 
-#ligreen {
-		 color:green;
-		 text-align:center;
+ul.navbar li {	/*Endrer alt som innenfor <li></li> så lenge ul har class="navbar"*/
+			background: #FF5900;	/*Bakgrunnsfarge til de forskjellige alternativene i listen*/
+			margin: 0.5em 0;	/*Endrer margin til 0.5em for <li>*/
+			padding: 0.3em;	/*Endrer padding til 0.3em for <li>*/
+			border-right: 0.8em solid black;	/*Legger til en solid svart border til høyre på 0.8em*/
+			border-bottom: 0.3em solid black;	/*Legger til en solid svart border i bunnen på 0.3em*/
 }
 
-#liwhite {
-		 color:white;
-		 text-align:center;
+ul.navbar a {	/*Endrer alt innenfor anchor i html filen, altså linkene i dette tilfellet. Ul må fremdeles ha class="navbar" for å motta forandringene gjort her*/
+			text-decoration:none;	/*Fjerner linjen under linken*/
 }
 
-#librown {
-		 color:brown;
-		 text-align:center;
+a:link {	/*Linker i anchor blir forandret*/
+		color:black;	/*Linker blir svart*/
+		font-family: Georgia;	/*Linker får skrifttype Georgia*/
+		
 }
 
 
-h3 {
-    color: #000000;
-    background-color: #900;
-    font-size: 2em;
-    margin: 0;
-    margin-bottom: 4px;
-    font-style: italic;
-    text-align: center;
-    letter-spacing: 0.5em;
-    border-bottom-style: solid;
-    border-bottom-width: 0.4em;
-    border-bottom-color: #c00;
-	border-left-style: solid;
-	border-left-width: 1em;
-	border-left-color: #c00;
-	border-right-style: solid;
-	border-right-width: 1em;
-	border-right-color: #c00;
-	border-top-style: solid;
-	border-top-width: 0.3em;
-	border-top-color: #000000
-}
-
-p {
-	color:white
-}
-
-body {
-	  background-color:#2f251c;
+address {	/*Endrer alt innenfor <address>*/
+		margin-top: 1em;	/*Margin fra toppen blir satt til 1em.*/
+		padding-top: 1em;	/*Padding fra toppen blir satt til 1em*/
+		border-top: thin dotted;	/*Legger til en stipplet linje over address*/
 }
