@@ -1,62 +1,36 @@
 <!DOCTYPE html>
 
 <!--
-  LAB1
+  LAB2
   Navn: Sigve Bergh
   Jeg samarbeidet med: Ingen
   Tiden jeg har brukt på oppgaven: Ca 2 timer på koding, 
 -->
 
 <html>
-<center>
 <head>
- <meta charset="utf-8">
- <title>Programmeringsspråk (versjon 0.0.1)</title>
-<script type="text/javascript" src="jquery-1.10.2.min.js"></script> 
-
-<link href="proglangs.css" rel="stylesheet" Type="text/css" media="all"> 
- 
- 
+<meta charset="utf-8">
+	<title>Programmeringsspråk</title>
+<link href="proglangs.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+<ul class="navbar">
+	<li><a href="proglangs.html">Hjem</a>
+	<li><a href="javascript:AlertIt();">Kronologisk</a>
+	<li><a href="javascript:AlertIt();">Hierarkisk</a>
+	<li><a href="javascript:AlertIt();">Alfabetisk</a>
+</ul>
+<script type="text/javascript" src="proglangs.js"></script>
 
-			<!--Oppgave 0-->
+<h1>Programmeringsspråk</h1>
 
-<h3>Programmeringsspråk</h3>
-		<p>
-	
-		<ul style="list-style-type:none">
 
-				<li id="liblue">ActionScript</li>
-				<li id="liblue">AppleScript</li>
-				<li id="liblue">Asp</li>
-				<li id="liblue">BASIC</li>
-				<li id="liblue">C</li>
-				<li id="lired">C++</li>
-				<li id="lired">Clorjure</li>
-				<li id="lired">COBOL</li>
-				<li id="lired">ColdFusion</li>
-				<li id="lired">Erlang</li>
-				<li id="liorange">Fortran</li>
-				<li id="liorange">Groovy</li>
-				<li id="liorange">Haskell</li>
-				<li id="liorange">Java</li>
-				<li id="liorange">JavaScript</li>
-				<li id="liorange">Lisp</li>
-				<li id="ligreen">Perl</li>
-				<li id="ligreen">PHP</li>
-				<li id="ligreen">Python</li>
-				<li id="ligreen">Ruby</li>
-				<li id="ligreen">Scala</li>
-				<li id="ligreen">Scheme</li>
-		<p>
-	
-			<!--Oppgave 1 og Oppgave 2-->
-			
-					<p>
-							<form>					
-								<select name="list" id="list">   
-									<option value=" ">-Velg et språk-</option>
+
+<form>
+								<label for="proglangs">Velg:</label>
+								<select name="list" id="proglangs" onChange="printToOutputBox(this)">   
+									<option value=" "> </option>
 									<option value="Actionscript">Actionscript</option>
 									<option value="Asp">Asp</option>
 									<option value="BASIC">BASIC</option>
@@ -80,14 +54,15 @@
 									<option value="Scheme">Scheme</option>
 								</select>
 		
-			<p> <span id="outputbox">Intet programmeringspråk er selektert, vennligst velg ett. </span></p>
+			<p> <span id="outputbox">Velkommen til ditt #1 stopp for alt du trenger å vite om programmeringsspråk!
+							<br><br>Vennligst selekter et språk i menyen ovenfor.</span>
 			</form>
 			
-	<script type="text/javascript" src="proglangs.js"></script>						
-								
-			
-		
-		
-		
+	<script type="text/javascript" src="proglangs.js"></script>	
+
+
+	<address>Laget 15. september 2013<br>
+			Av Sigve Bergh
+
 </body>
 </html>
