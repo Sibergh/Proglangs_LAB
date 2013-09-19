@@ -1,4 +1,4 @@
-Kontrollspørsmål
+Kontrollspørsmål LAB1:
 
 0)	Javascript kan brukes til å manipulere en webside
 	for å gjøre den mer dynamisk ved å opprette animasjoner
@@ -49,3 +49,20 @@ Kontrollspørsmål
 	heller ikke nødvendigvis en veldig oversiktlig måte å fremstille en slik liste på dersom
 	den inneholdt alle programmeringsspråkene. Da ville jeg heller lagd en  enkel liste som var
 	organisert alfabetisk, uten drop-down alternativet.
+
+Kontrollspørsmål LAB2:
+
+SPØRSMÅL: Forklar hvilken deler av din applikasjon så langt, implementerer de forskjellige lagene i MVC
+arkitekturen. MVC står får Model­View­Controller, som til norsk kan oversettes til
+Modell­Presentasjon­Kontorller.
+
+SVAR: 
+
+MODEL - Modellen i min oppgave ser jeg for meg at er <select> og <form>. Dette fordi disse
+		viser en endring.
+		
+VIEW - Alt som blir gjort på oppgaven kan sees i html-filen. Dermed er den VIEW i MVC.
+
+CONTROLLER - Controller i oppgaven er javascriptfilene. Controller er definert som det som
+			 gir en endring mellom model og view. Det er JS-filen som får <select><form> til
+			 å endres i html.
