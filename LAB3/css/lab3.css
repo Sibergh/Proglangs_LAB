@@ -1,0 +1,17 @@
+﻿.blue	{
+	color:blue;
+}
+
+#my_canvas	{
+	border: 1px dotted;
+}
+
+.x	{
+	font-weight:bold;
+	color:blue
+}
+
+.y	{
+	font-weight:bold;
+	color:purple
+}
