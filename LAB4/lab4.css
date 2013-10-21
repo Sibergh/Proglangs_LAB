@@ -1,0 +1,76 @@
+﻿/*margen virker lik utfylling (padding), men det er forskjeller; padding beveger 
+teksten vekk fra elementets ramme, mens margin setter avstand mellom selve 
+elementet (på utsiden av rammen) og foreldreelementets ramme
+ 
+ Viktig også å huske dette:
+The total width of an element should be calculated like this:
+Total element width = width + left padding + right padding + left border + right 
+border + left margin + right margin
+The total height of an element should be calculated like this:
+Total element height = height + top padding + bottom padding + top border + 
+bottom border + top margin + bottom margin
+ */
+
+body	{
+	margin: 0;
+	padding: 0;
+}
+
+#body-container	{
+	width: 415px;
+	height: 500px;
+	margin: 0 auto; /*Setter div til senter av skjermen*/
+	border: 1px solid #3285ef;
+}
+
+#body-container .glossary-container	{
+		clear: both; /*Dette vil ikke tillate noen elementer som flytter på noen av sidene*/
+}
+#body-container .content-container	{
+	height: 430px;
+	width: 415px;
+	overflow: auto; /*Et rullefelt vises når innholdet er større enn den spesifiserte høyden*/
+	font-family: 'Arial', Verdana, Tahoma;
+	font-size: 10pt;
+	clear: both;
+}
+
+#body-container .content-container div	{
+	padding-left: 10px;
+	border-bottom: 1px #666666 solid;
+}
+
+#body-container .content-container p.return-to-top	{
+	color: #0066FF;
+	text-decoration: underline;
+	text-align: right;
+	margin-right: 10px;
+	cursor: pointer;	/*Kursøren blir til en 'hånd' */
+}
+
+
+
+.firstUL	{
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+	background-color: #3285ef;
+}
+
+.firstUL li	{
+	background: transparent url(images/link_sprite_img.jpg) no-repeat scroll -5 -5 ;
+	display: inline;	/*Utlistingene vil bli satt på en rad (som tekst)*/
+	font-family: 'Arial', Verdana, Tahoma;
+	font-size: 16pt;
+	font-weight: bold;
+	padding: 10px 15px 22px;
+	line-height: bold;
+	padding: 10px 15px 22px;
+	line-height: 70px;
+	cursor: pointer;
+}
+
+.firstUL li.selected	{
+	background: transparent url(images/link_sprite_img.jpg) no-repeat scroll -5 -80 ;
+	color: #ffffff;
+	font-weight: bold;
+}
